@@ -13,8 +13,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity(name="SearchLog")
-@Table(name="Search_Log")
+@Entity(name="search_log")
+@Table(name="search_log")
 public class SearchLogEntity {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)

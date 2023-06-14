@@ -28,7 +28,7 @@ public interface FollowRepository extends JpaRepository<FollowingEntity, Followi
                         "U.user_number AS UserNumber," +
                         "U.nickname AS UserNickname," +
                         "U.profile_image_url AS UserProfileImageUrl " +
-                        "FROM User U " +
+                        "FROM user U " +
                         "WHERE U.user_number " +
                         "IN(SELECT follower_number " +
                         "FROM following " +
@@ -39,7 +39,7 @@ public interface FollowRepository extends JpaRepository<FollowingEntity, Followi
                         "U.user_number AS UserNumber," +
                         "U.nickname AS UserNickname," +
                         "U.profile_image_url AS UserProfileImageUrl " +
-                        "FROM User U " +
+                        "FROM user U " +
                         "WHERE U.user_number " +
                         "IN(SELECT following_number " +
                         "FROM following " +

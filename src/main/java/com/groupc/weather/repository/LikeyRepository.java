@@ -25,7 +25,7 @@ public interface LikeyRepository extends JpaRepository<LikeyEntity, LikeyPk> {
    @Query(
        value = 
        "SELECT * " + 
-       "FROM Likey L " +
+       "FROM likey L " +
        "WHERE L.board_number = :boardNumber ",
        nativeQuery = true
        )

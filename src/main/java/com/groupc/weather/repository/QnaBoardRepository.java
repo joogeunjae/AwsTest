@@ -28,7 +28,7 @@ public interface QnaBoardRepository extends JpaRepository<QnaBoardEntity, Intege
         "U.nickname AS boardWriterNickname," +
         "U.profile_image_url AS boardWriterProfileImageUrl," +
         "Q.reply_complete AS replyComplete " +
-        "FROM User U, Qna_Board Q " +
+        "FROM user U, qna_board Q " +
         "WHERE Q.user_number = U.user_number " +
         "GROUP BY Q.board_number " +
         "ORDER BY Q.write_datetime DESC ",
@@ -46,7 +46,7 @@ public interface QnaBoardRepository extends JpaRepository<QnaBoardEntity, Intege
         "U.nickname AS boardWriterNickname, " +    
         "U.profile_image_url AS boardWriterProfileImageUrl, " +
         "Q.reply_complete AS replyComplete " +
-        "FROM Qna_Board Q, User U " +
+        "FROM qna_board Q, user U " +
         "WHERE (Q.title LIKE CONCAT('%',:search_word,'%') or Q.content LIKE CONCAT ('%',:search_word,'%')) " +
         "AND Q.user_number = U.user_number " +
         "GROUP BY Q.board_number " +

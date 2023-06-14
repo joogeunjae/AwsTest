@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="Chatting_Room")
-@Entity(name="ChattingRoom")
+@Table(name="chatting_room")
+@Entity(name="chatting_room")
 @IdClass(ChattingRoomPk.class)
 public class ChattingRoomEntity {
     

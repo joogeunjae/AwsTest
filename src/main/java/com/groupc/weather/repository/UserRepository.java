@@ -38,7 +38,7 @@ public interface UserRepository extends JpaRepository<UserEntity, Integer> {
       "U.nickname AS nickname," +
       "U.profile_image_url AS profileImageUrl," +
       "count(DISTINCT F.follower_number) AS followerCount " +
-      "FROM User U, Following F " +
+      "FROM user U, following F " +
       "WHERE U.user_number = F.following_number " +
       "GROUP BY U.user_number " +
       "ORDER BY followerCount DESC " +
