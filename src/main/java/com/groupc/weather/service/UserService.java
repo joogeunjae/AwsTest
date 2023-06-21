@@ -43,4 +43,5 @@ public interface UserService {
     public ResponseEntity<? super FollowerUserResponseDto> getFollowerUser(Integer followerNumber);
 
     public ResponseEntity<? super FollowingUserResponseDto> getFollowingUser(Integer followingNumber);
+
 }
